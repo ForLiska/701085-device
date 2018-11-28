@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
           <a class="main-header-logo">
-              <img src="http://placehold.it/150x100" width="368" height="153" alt="Логотип DEVICE">
+              <img src="img/logo.svg" width="368" height="153" alt="Логотип DEVICE">
           </a>
             <ul class="user-navigation">
                 <li class="search-link user-item">Поиск по сайту</li>
@@ -18,6 +18,20 @@
             </ul>
             <ul class="site-navigation">
               <li class="site-item"><a href="catalog.html">Каталог товаров</a></li>
+                      <ul class="submenu-left">
+                        <li class="submenu-item"><a href="vr.html">Виртуальная реальность</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Моноподы для селфи</a></li>
+                        <li class="submenu-item"><a href="action-cam.html">Экшн-камеры</a></li>
+                    </ul>
+
+                     <ul class="submenu-center">
+                        <li class="submenu-item"><a href="fitness-bracelet.html">Фитнес-браслеты</a></li>
+                        <li class="submenu-item"><a href="smart-watch.html">Умные часы</a></li>
+                    </ul>
+
+                    <ul class="submenu-right">
+                        <li class="submenu-item"><a href="quadcopter.html">Квадрокоптер</a></li>
+                    </ul>           
               <li class="site-item"><a href="delivery.html">Доставка</a></li>
               <li class="site-item"><a href="guarantee.html">Гарантия</a></li>
               <li class="site-item"><a href="contacts.html">Контакты</a></li>
@@ -26,6 +40,25 @@
     </header>
 
     <main class="container">
+      <section class="modal modal-massage">
+          <h2 class="visually-hidden" >Форма обратной связи</h2>
+          <form name="sentMessage" id="contactForm">           
+                  <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input name="login" type="text" id="name"  placeholder="Имя Фамилия">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Ваш e-mail</label>
+                    <input name="e-mail" id="email" type="email"  placeholder="email@example.com">
+                  </div>
+              <div class="form-group">
+                <label for="message">Текст письма:</label>
+                <textarea name="message" id="message"  placeholder="В свободной форме " ></textarea>
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
+      </section>
+
         <section class="about communication">
             <h2 class="title">О нас</h2>
             <p>
@@ -55,6 +88,15 @@
             <img src="http://placehold.it/220x165" width="220" height="165" alt="Схема проезда ">
             <a class="button" href="address.html">напишите нам</a>
           </section>
+
+          <section class="modal modal-map">
+            <h2 class="visually-hidden">
+              Как до нас добраться
+            </h2>
+            <p>
+              <img src="http://placehold.it/780x560" wifth="780" height="560" alt="Офис компании по адресу г.Москва, ул. Строителей, д.15">
+            </p>
+          </section>
     </main>
 
     <footer class="main-footer">
@@ -83,11 +125,11 @@
         </div>
         <div class="foot-soc-icon">
             <div class="footer-social">
-              <ul>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-              </ul>
+                <ul>
+                    <li><a class="social-button" href="#" aria-label="Наша компания в Фейсбук">Фейсбук</a></li>
+                    <li><a class="social-button" href="#" aria-label="Наша компания в Инстаграм">Инстаграм</a></li>
+                    <li><a class="social-button" href="#" aria-label="Наша компания в Твиттер">Твиттер</a></li>
+                  </ul>
             </div>
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo">
               <img src="http://placehold.it/60x100" width="60" height="100" alt="Логотип htmlacademy">
