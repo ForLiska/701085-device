@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroylight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    color: rgb(70,70,70);
+    text-transform: uppercase;
+    background-color: rgb(255,255,255);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .button {
+    font: inherit;
+    font-family: 'gilroyextrabold', Arial, sans-serif; 
+    text-align: center;
+    color: rgb(0,0,0);
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+  
+    background-color: rgb(255,255,255);
+    border: none;
+  }
+
+  .site-navigation,
+  .user-navigation,
+  .submenu-column,
+  .catalog-list{
+    list-style: none;
+  }
+
+  .main-navigation {
+    color: rgb(0,0,0);
+    background-color: rgb(247,226,150);
+  }
+
+  .user-navigation{
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .site-navigation{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'gilroyextrabold', Arial, sans-serif; 
+  }
+
+  .submenu-column{
+    font-size: 15px;
+    line-height: 36px;
+    font-family: 'Open Sans', Arial, sans-serif; 
+  }
+
+  .site-navigation a,
+  .user-navigation a,
+  .catalog-list a{
+    color: rgb(0,0,0);
+  }    
+
+  .submenu-column a:hover,
+  .user-navigation a:hover,{
+  color: rgb(136,124,80);
+  }
+
+  .submenu-column a:focus,
+  .user-navigation a:focus { 
+    color: rgb(196,179,118);
+  }
+
+  .site-navigation a:hover, {
+    color: rgb(99,90,60);
+  }
+
+  .site-navigation a:focus, {
+    color: rgb(172,158,105);
+  }
+/* MAIN */
+  .title{
+    color:rgb(0,0,0);
+    font-size: 47px;
+    line-height: 48px;
+    font-family: 'gilroyextrabold', Arial, sans-serif; 
+  }
+
+  .logistics{
+    color:rgb(0,0,0);
+    font-size: 18px;
+    line-height: auto;
+    font-family: 'gilroyextrabold', Arial, sans-serif; 
+   }
+ 
+
+/* FOOTER */
+  footer{
+    background-color: rgb(70,70,70);
+    color:rgb(255,255,255);
+  }
+  .logo{
+    color:rgb(255,198,0);
+    font-size: 48px;
+    line-height: auto;
+    font-family: 'gilroyextrabold', Arial, sans-serif; 
+  }
+
+  .footer-site-navigation,
+  .footer-user-navigation,
+  .footer-social-navigation{
+    list-style: none;
+  }
+
+  .footer-user-navigation a,
+  .footer-site-navigation a,
+  .footer-contacts a,
+  .footer-social-navigation a{
+    color: rgb(255,255,255);
+  }    
+  
+
+
+
+
+
+
+
+
