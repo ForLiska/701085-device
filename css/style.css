@@ -1,32 +1,72 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'gilroy';
     font-style: normal;
-
+    font-weight: 800;
+    src: url('../fonts/web/gilroyextrabold.woff2') format('woff2'),
+     url('../fonts/web/gilroyextrabold.woff') format('woff');
 }
-@font-face {
-    font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 
+
+@font-face {
+    font-family: 'gilroy';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/web/gilroylight.woff2') format('woff2'),
+    url('../fonts/web/gilroylight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/web/opensans.woff2') format('woff2'),
+  url('../fonts/web/opensans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/web/opensanslight.woff2') format('woff2'),
+  url('../fonts/web/opensanslight.woff') format('woff');
 }
 
 body {
     margin: 0;
     padding: 0;
   
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'opensans', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: rgb(70,70,70);
     background-color: rgb(255,255,255);
+    letter-spacing: 0.1em;
+  }
+
+
+  .willfade:hover, .willfade:focus {
+    opacity: .6;
+  }
+  
+  .willfade:active {
+    opacity: .3;
+  }
+  
+  .willfadesecond{
+    opacity: .3;
+  }
+  .willfadesecond:hover {
+    opacity: 1;
+  }
+
+  .willfadesecond:active, .willfadesecond:focus {
+    opacity: .3;
   }
 
   a {
     text-decoration: none;
   }
+  /*
   .user-link:hover{
       color: rgba(0,0,0,0.6);
   }
@@ -48,17 +88,18 @@ body {
     color: rgba(0,0,0,0.4);
   }
 
-
-  .button {
-    font: inherit;
-    font-family: 'gilroyextrabold', Arial, sans-serif; 
+*/
+  button {
+    font-family: 'gilroy', Arial, sans-serif; 
+    font-weight: bold;
     text-align: center;
     color: rgb(0,0,0);
     vertical-align: middle;
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 0.1em;
   
-    background-color: rgb(255,255,255);
+    background-color: transparent;
     border: none;
   }
 
@@ -82,7 +123,9 @@ body {
   .site-link{
     font-size: 18px;
     line-height: 24px;
-    font-family: 'gilroyextrabold', Arial, sans-serif; 
+    font-family: 'gilroy', Arial, sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .submenu-link{
@@ -97,21 +140,65 @@ body {
     color: rgb(0,0,0);
   }    
 
+  .visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  .submenu{
+    display: flex;
+  }
+  .submenu-column{
+    width: 200px;
+    height: 129px;
+    background: transparent;
+    margin: 40px;
+
+  }
+
+
 /* MAIN */
   .title{
     color:rgb(0,0,0);
     font-size: 47px;
     line-height: 48px;
-    font-family: 'gilroyextrabold', Arial, sans-serif; 
+    font-family: 'gilroy', Arial, sans-serif; 
+    font-weight: bold;
   }
 
   .logistics{
     color:rgb(0,0,0);
     font-size: 18px;
     line-height: auto;
-    font-family: 'gilroyextrabold', Arial, sans-serif; 
+    font-family: 'gilroy', Arial, sans-serif; 
+    font-weight: bold;
    }
  
+   .sentlabel{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'opensans';
+    color: rgb(0,0,0);
+   }
+
+   .sentinput{
+    opacity: .3;
+    background-color: rgb(0,0,0,0.2);
+  }
+
+   .sentinput:hover {
+    opacity: .6;
+   }
+
+   .sentinput:focus, .sentinput:active {
+    opacity: 1;
+    background-color: rgb(255,255,255);
+  }
+  
+
 
 /* FOOTER */
   footer{
@@ -122,7 +209,8 @@ body {
     color:rgb(255,198,0);
     font-size: 48px;
     line-height: auto;
-    font-family: 'gilroyextrabold', Arial, sans-serif; 
+    font-family: 'gilroy', Arial, sans-serif;
+    font-weight: bold;
   }
 
   .footer-site-navigation,
@@ -138,6 +226,9 @@ body {
     color: rgb(255,255,255);
   }    
   
+  .footer-site-navigation{
+    text-transform: uppercase;
+  }
 
 
 
