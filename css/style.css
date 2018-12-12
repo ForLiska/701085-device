@@ -112,7 +112,7 @@ body {
 
   .main-navigation {
     color: rgb(0,0,0);
-    background-color: rgb(247,226,150);
+    background-color: transparent;
   }
 
   .user-link{
@@ -154,7 +154,6 @@ body {
   }
   .submenu-column{
     width: 200px;
-    height: 129px;
     background: transparent;
     margin: 40px;
 
@@ -230,10 +229,172 @@ body {
     text-transform: uppercase;
   }
 
+  /* Сеточные стили */
+ 
+  .container{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .main-navigation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .user-navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+  }
+  
+  .search-link{
+    width: 550px;
+  }
+
+  .compare{
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  .site-navigation{
+    display: flex;
+  }
+  
+  .catalog{
+    width: 550px;
+  }
+  .contacts{
+    margin-left: auto;
+  }
+  .guarantee{
+    margin-left: 33px;
+  }
+
+  .main-navigation-wrapper .container{
+    background-color:rgb(247,226,150);
+    padding-top: 45px;
+    padding-right: 60px;
+    padding-bottom: 45px;
+    padding-left: 60px;
+    width: 1160px;
+  }
+  .header-logo{
+    width: 178px;
+    height: 54px;
+    margin-bottom: -28px;
+    margin-left: 140px;
+    }
 
 
+  .communication-columns{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.about-communication {
+  width: 600px;
+}
 
 
+.main-footer-wrapper .container{
+  background-color: rgb(70,70,70);
+  padding-top: 63px;
+  padding-bottom: 67px;
+  width: 1160px;
+}
 
 
+  .main-footer-wrapper{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+  }
+.log-foot-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
 
+  
+  .footer-user-navigation{
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  .footer-center-navigation{
+    display: flex;
+    margin-bottom: 67px;
+
+  }
+  .footer-site-navigation{
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-navifooterrow{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 500px;
+  }
+  .footer-social-navigation{
+    display: flex;
+    justify-content: space-around;
+  }
+  .compare-footer{
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .guarantee-footer{
+    margin-right: 36px;
+    margin-left: 36px;
+  }
+  .footer-navigation{
+    margin-left:160px ;
+    margin-right: 160px;
+  }
+  .page-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .main-navigation-wrapper{
+    margin-bottom: 44px;
+  }
+  .breadcrumbs{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 45px;
+  }
+ 
+  .catalog-columns{
+    display: flex;
+  }
+  .catalog-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    width: 200px;
+  }
+  .catalog-item {
+    width: 360px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+  }
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 834px;
+    padding: 0;
+
+    list-style: none;
+  }
+  .filters{
+    width: 300px;
+  }
+  .icon-inst{
+    margin-left: 23px;
+    margin-right: 23px;
+  }
