@@ -6,22 +6,20 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body>           
+     <div class="container">
       <header class="main-header">
           <nav class="main-navigation">
-            <div class="main-navigation-wrapper">
               <div class="header-logo">
                 <a class="main-header-logo">
                     <img src="img/logo.svg" width="168" height="54" alt="Логотип DEVICE" class="willfade">
                 </a>
               </div>
-            <div class="container">
-                
                 <ul class="user-navigation">
                     <li class="search-link user-item">
                       <form method="get" name="formforsearch" id="searchform">
                         <input name="search" placeholder="Поиск по сайту" type="search">
-                        <button class="button" type="submit">Найти</button>
+                        <button class="button visually-hidden" type="submit">Найти</button>
                       </form>
                     </li>
                     <li class="user-item "><a href="login.html" class="willfade enter user-link user-link-login">Войти</a></li>
@@ -49,12 +47,11 @@
                   <li class="site-item guarantee"><a href="guarantee.html" class="willfade site-link">Гарантия</a></li>
                   <li class="site-item contacts"><a href="contacts.html" class="willfade site-link">Контакты</a></li>
                 </ul>
-            </div>
-            </div>
           </nav>
         </header>
-
-    <main class="container">
+      </div>
+<div class="container">
+    <main class="main-index">
       <section class="modal modal-massage visually-hidden">
           <h2 class="visually-hidden" >Форма обратной связи</h2>
           <button class="button" type="button" value = "Закрыть это окно"><img src="img/svg-device/modal-close.svg" width="55" height="55" alt="Закрыть окно"></button>
@@ -115,54 +112,57 @@
             </p>
             <button class="button" type="button" value = "Закрыть это окно"><img src="img/svg-device/modal-close.svg" width="55" height="55" alt="Закрыть окно"></button>
           </section>
-
     </main>
+  </div>
 
     <footer class="main-footer">
-        <div class="main-footer-wrapper">
-            <div class="container">
-              <div class="log-foot-item footerrow">
-                  <div class="logo willfade">DEVICE</div>
-                  <ul class="footer-user-navigation">
-                      <li class="user-item login-footer"><a href="login.html" class="willfadesecond user-link user-link-login">Войти</a></li>
-                      <li class="user-item compare-footer "><a href="compare.html" class="willfadesecond user-link user-link-compare" >Сравнить</a></li>
-                      <li class="user-item cart-footer"><a href="cart.html" class="willfadesecond user-link user-link-cart">Корзина</a></li>
-                  </ul>
-              </div>
-              <div class="footerrow">
-                <div class="footer-center-navigation">
-                  <p class="footer-contacts">
-                    г. Москва, ул. Строителей, 15
-                  </p>
-                  <nav class="footer-navigation">
-                    <ul class="footer-site-navigation">
-                      <li><a href="delivery.html" class="willfade site-link">Доставка</a></li>
-                      <li class="guarantee-footer"><a href="guarantee.html" class=" willfade site-link">Гарантия</a></li>
-                      <li><a href="contacts.html" class="willfade site-link">Контакты</a></li>
-                    </ul>
-                  </nav>
-                    <p class="footer-contacts">
-                      <a href="tel:+74954959595">Тел.: +7(495)4959595</a>
-                    </p>
-                </div>
-              </div>
-              <div class="footer-navifooterrow">
-                  <div class="footer-social">
-                      <ul class="footer-social-navigation">
-                          <li><a class="social-button willfadesecond" href="#" aria-label="Наша компания в Фейсбук"><img src="img/facebook.png" width="32" 
-                            height="32" alt="Иконка Фейсбук"></a></li>
-                          <li class="icon-inst"><a class="social-button willfadesecond" href="#" aria-label="Наша компания в Инстаграм"><img src="img/instagram.png" width="32" 
-                            height="32" alt="Иконка Инстаграм"></a></li>
-                          <li><a class="social-button willfadesecond" href="#" aria-label="Наша компания в Твиттер"><img src="img/twitter.png" width="32" 
-                            height="32" alt="Иконка Твиттер"></a></li>
-                      </ul>
-                  </div>
-                  <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo willfade">
-                    <img src="img/svg-device/logo-html.svg" width="27" height="35" alt="Логотип htmlacademy">
-                  </a>
+        <div class="container">
+          <div class="footerrow">
+              <div class="logo willfade">DEVICE</div>
+              <ul class="footer-user-navigation">
+                  <li class="user-item login-footer"><a href="login.html" class="willfadesecond user-link user-link-login">Войти</a></li>
+                  <li class="user-item compare-footer "><a href="compare.html" class="willfadesecond user-link user-link-compare" >Сравнить</a></li>
+                  <li class="user-item cart-footer"><a href="cart.html" class="willfadesecond user-link user-link-cart">Корзина</a></li>
+              </ul>
+          </div>
+          <div class="footerrow centerrow">
+            <div class="address">
+              <p class="footer-contacts">
+                г. Москва, ул. Строителей, 15
+              </p>
+            </div>
+              <nav class="footer-navigation">
+                <ul class="footer-site-navigation">
+                  <li><a href="delivery.html" class="willfade site-link">Доставка</a></li>
+                  <li class="guarantee-footer"><a href="guarantee.html" class=" willfade site-link">Гарантия</a></li>
+                  <li><a href="contacts.html" class="willfade site-link">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="contacts">
+                <p class="footer-contacts">
+                  <a href="tel:+74954959595">Тел.: +7(495)4959595</a>
+                </p>
               </div>
             </div>
+          <div class="footerrow">
+              <div class="footer-line"></div>
+              <div class="footer-social">
+                  <ul class="footer-social-navigation">
+                      <li><a class="social-button willfadesecond" href="#" aria-label="Наша компания в Фейсбук"><img src="img/facebook.png" width="32" 
+                        height="32" alt="Иконка Фейсбук"></a></li>
+                      <li class="icon-inst"><a class="social-button willfadesecond" href="#" aria-label="Наша компания в Инстаграм"><img src="img/instagram.png" width="32" 
+                        height="32" alt="Иконка Инстаграм"></a></li>
+                      <li><a class="social-button willfadesecond" href="#" aria-label="Наша компания в Твиттер"><img src="img/twitter.png" width="32" 
+                        height="32" alt="Иконка Твиттер"></a></li>
+                  </ul>
+              </div>
+              <div class="logo-academy">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo willfade">
+                <img src="img/svg-device/logo-html.svg" width="27" height="35" alt="Логотип htmlacademy">
+              </a>
+              </div>
+          </div>
         </div>
-     </footer>   
+ </footer>   
   </body>
 </html>

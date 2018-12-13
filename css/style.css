@@ -240,18 +240,25 @@ body {
   .main-navigation{
     display: flex;
     flex-direction: column;
+  }
+  .main-header{
+    background-color:rgb(247,226,150);
+    padding-top: 45px;
+    padding-right: 60px;
+    padding-bottom: 45px;
+    padding-left: 60px;
     margin-top: 40px;
   }
 
   .user-navigation{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 
   }
   
   .search-link{
-    width: 550px;
+    width: 540px;
   }
 
   .compare{
@@ -263,30 +270,27 @@ body {
     display: flex;
   }
   
+  .container .main{
+    margin-top: 45px;
+  }
+  .container .main-index{
+    margin-bottom: 90px;
+  }
+
+
   .catalog{
-    width: 550px;
+    width: 540px;
   }
-  .contacts{
-    margin-left: auto;
-  }
+ 
   .guarantee{
     margin-left: 33px;
   }
 
-  .main-navigation-wrapper .container{
-    background-color:rgb(247,226,150);
-    padding-top: 45px;
-    padding-right: 60px;
-    padding-bottom: 45px;
-    padding-left: 60px;
-    width: 1160px;
-  }
   .header-logo{
     width: 178px;
     height: 54px;
-    margin-bottom: -28px;
-    margin-left: 140px;
-    }
+    margin-top: -70px;
+  }
 
 
   .communication-columns{
@@ -294,12 +298,15 @@ body {
     justify-content: space-between;
   }
 
-.about-communication {
-  width: 600px;
-}
+  .about-communication {
+    width: 460px;
+  }
+  .contacts-communication{
+    width: 560px;
+  }
 
 
-.main-footer-wrapper .container{
+.main-footer .container{
   background-color: rgb(70,70,70);
   padding-top: 63px;
   padding-bottom: 67px;
@@ -324,11 +331,7 @@ body {
     justify-content: flex-end;
 
   }
-  .footer-center-navigation{
-    display: flex;
-    margin-bottom: 67px;
 
-  }
   .footer-site-navigation{
     display: flex;
     justify-content: space-around;
@@ -338,10 +341,16 @@ body {
     justify-content: space-between;
     padding-left: 500px;
   }
+  .footerrow{
+    display: flex;
+    justify-content: space-between;
+  }  
   .footer-social-navigation{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 145px;
   }
+
   .compare-footer{
     margin-right: 30px;
     margin-left: 30px;
@@ -350,18 +359,31 @@ body {
     margin-right: 36px;
     margin-left: 36px;
   }
-  .footer-navigation{
-    margin-left:160px ;
-    margin-right: 160px;
+  .centerrow{
+    margin-top: 58px;
+    margin-bottom: 68px;
   }
+
+  .footer-line{
+    width:80px;
+    height:6px;
+    background: rgb(255,190,0);
+  }
+  .address,
+  .contacts{
+    width: 200px;
+  }
+
+  .logo-academy{
+    width: 80px;
+  }
+
   .page-title{
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
   }
-  .main-navigation-wrapper{
-    margin-bottom: 44px;
-  }
+
   .breadcrumbs{
     display: flex;
     padding: 0;
@@ -369,32 +391,32 @@ body {
     margin-bottom: 45px;
   }
  
-  .catalog-columns{
-    display: flex;
-  }
   .catalog-columns {
     display: flex;
     justify-content: space-between;
     margin-left: 60px;
-    width: 200px;
+
   }
   .catalog-item {
     width: 360px;
-    margin-bottom: 70px;
-    margin-left: 40px;
   }
   .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    width: 834px;
+    justify-content: space-between;
+    width: 760px;
     padding: 0;
 
     list-style: none;
   }
   .filters{
-    width: 300px;
+    width: 200px;
   }
   .icon-inst{
     margin-left: 23px;
     margin-right: 23px;
   }
+  .catalog-selfi{
+    width: 760px;
+  }
+  
