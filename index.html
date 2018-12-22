@@ -17,12 +17,12 @@
               </div>
                 <ul class="user-navigation">
                     <li class="search-link user-item">
-                      <form method="get" name="formforsearch" id="searchform">
-                        <input name="search" placeholder="Поиск по сайту" type="search">
-                        <button class="button visually-hidden" type="submit">Найти</button>
+                      <form method="get" name="formforsearch" id="searchform" class="search-form">
+                        <input class="search" name="search" placeholder="Поиск по сайту" type="search">
+                        <button class="search-btn" type="submit">Найти</button>
                       </form>
                     </li>
-                    <li class="user-item "><a href="login.html" class="willfade enter user-link user-link-login">Войти</a></li>
+                    <li class="user-item "><a href="login.html" class="willfade user-link user-link-login">Войти</a></li>
                     <li class="user-item compare"><a href="compare.html" class="willfade user-link user-link-compare" >Сравнить</a></li>
                     <li class="user-item cart">
                       <a href="cart.html" class="willfade user-link user-link-cart">Корзина</a>
@@ -30,7 +30,7 @@
                 </ul>
                 <ul class="site-navigation">
                   <li class="site-item catalog"><a href="catalog.html"  class="willfade site-link site-navigation-cotalog">Каталог товаров</a>
-                    <nav class="submenu visually-hidden">
+                    <nav class="submenu">
                       <div class="submenu-column">
                         <li class="submenu-item"><a href="vr.html" class="willfade submenu-link">Виртуальная реальность</a></li>
                         <li class="submenu-item"><a href="monopod.html" class=" willfade submenu-link">Моноподы для селфи</a></li>
@@ -90,7 +90,7 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button btn-about" href="about.html">ПОДРОБНЕЕ О НАС</a>
+            <a class="button btn-about btn-communication" href="about.html"><p class="text-button">ПОДРОБНЕЕ О НАС</p></a>
           </section>
     
           <section class="contacts-communication">
@@ -101,7 +101,7 @@
             </p>
             <!--Здесь будет карта-->
             <img src="img/map.jpg" class="contacts-communication-map" width="560" height="222" alt="Схема проезда">
-            <a class="button" href="address.html">НАПИШИТЕ НАМ</a>
+            <a class="button btn-communication" href="address.html"><p class="text-button">НАПИШИТЕ НАМ</p></a>
           </section>
         </div>
 
@@ -122,9 +122,11 @@
           <div class="footerrow">
               <div class="logo willfade">DEVICE</div>
               <ul class="footer-user-navigation">
-                  <li class="user-item login-footer"><a href="login.html" class="willfadesecond user-link user-login">Войти</a></li>
+                  <li class="user-item login-footer">
+                    <a href="login.html" class="willfadesecond user-link user-login masked">Войти</a>
+                  </li>
                   <li class="user-item compare-footer "><a href="compare.html" class="willfadesecond user-link user-compare" >Сравнить</a></li>
-                  <li class="user-item cart-footer"><a href="cart.html" class="willfadesecond user-link user-cart">Корзина</a></li>
+                  <li class="user-item cart-footer"><a href="cart.html" class="willfadesecond user-link user-cart ">Корзина</a></li>
               </ul>
           </div>
           <div class="footerrow centerrow">
