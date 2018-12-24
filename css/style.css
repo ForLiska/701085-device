@@ -103,9 +103,11 @@ body {
     position: relative;
     padding: 0 23px;
     z-index: 0;
+    transition: all .3s ease;
   }
 
   .button::before {
+    
       content: "";
     
       position: absolute;
@@ -280,13 +282,10 @@ body {
     font-size: 18px;
     font-family: 'gilroy', Arial, sans-serif; 
     font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
    }
  
-
-
-
 /* FOOTER */
   footer{
     background-color: rgb(70,70,70);
@@ -439,69 +438,6 @@ body {
       background-position: 0 0;
     }
   
-  .footer-user-navigation .user-login{
-  position: relative;
-  margin-left: 25px;
-  }
-
-  .user-login::before {
-    content: "";
-  
-    position: absolute;
-
-    top: 4px;
-    left: -23px;
-    width: 13px;
-    height: 13px;
-    background: rgb(255,198,0);
-    mask-image: url(../img/svg-device/user.svg);
-    mask-mode: alpha; 
-    mask-size: 13px;
-    -webkit-mask-image: url(../img/svg-device/user.svg);
-  }
-  
-  .footer-user-navigation .user-cart{
-    position: relative;
-    margin-left: 25px;
-  }
-
-  .user-cart::before {
-    content: "";
-  
-    position: absolute;
-
-    top: 4px;
-    left: -23px;
-    width: 13px;
-    height: 13px;
-    background: rgb(255,198,0);
-    mask-image: url(../img/svg-device/cart.svg);
-    mask-mode: alpha; 
-    mask-size: 13px;
-    -webkit-mask-image: url(../img/svg-device/cart.svg);
-  }
-  
-    .footer-user-navigation .user-compare{
-      position: relative;
-      margin-left: 25px;
-    }
-  
-    .user-compare::before {
-      content: "";
-  
-      position: absolute;
-  
-      top: 4px;
-      left: -23px;
-      width: 13px;
-      height: 13px;
-      background: rgb(255,198,0);
-      mask-image: url(../img/svg-device/compare.svg);
-      mask-mode: alpha; 
-      mask-size: 13px;
-      -webkit-mask-image: url(../img/svg-device/compare.svg);
-    }
-
 
   .site-navigation-cotalog:hover + .submenu{
     visibility: visible;
@@ -639,8 +575,8 @@ body {
   }
 
   .compare-footer{
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 44px;
+    margin-left: 44px;
   }
   .guarantee-footer{
     margin-right: 36px;
@@ -983,18 +919,68 @@ body {
       background-position: 0 0;
     }
     
+    @keyframes bounce {
+      0% {
+        transform: translateY(-2000px);
+      }
+    
+      70% {
+        transform: translateY(30px);
+      }
+    
+      90% {
+        transform: translateY(-10px);
+      }
+    
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes shake {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+    
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: translateX(-10px);
+      }
+    
+      20%,
+      40%,
+      60%,
+      80% {
+        transform: translateX(10px);
+      }
+    }
+
     .modal{
       position: fixed;
+
+      display: none;
 
       background-color: rgb(255,255,255);
 
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
-    
-    .modal-massage{
-      z-index: 1;
 
-      display: none;
+    .modal-show {
+      display: block;
+
+      animation: bounce 0.6s;
+    }
+
+    .modal-error {
+      animation: shake 0.6s;
+    }
+    
+    .modal-message{
+      z-index: 1;
 
       top: 120px;
       left: 50%;
@@ -1008,6 +994,7 @@ body {
     }
     
     .modal-close {
+      z-index: 2;
       position: absolute;
       top: 22px;
       right: 22px;
@@ -1122,8 +1109,8 @@ body {
       top: 120px;
       left: 50%;
 
-      display: none;
-      
+
+
       margin-left: -480px;
 
       color: rgba(0,0,0);
@@ -1135,3 +1122,111 @@ body {
       margin: 0;
     }
     
+    .logistics .logistic-icon{
+      position: relative;
+      margin-left: 25px;
+    }
+  
+    .logistic-icon::before {
+        content: "";
+      
+        position: absolute;
+  
+        top: 10px;
+        left: -25px;
+  
+        width: 6px;
+        height: 6px;
+        
+
+        background: rgb(255,255,255);
+
+        border: rgb(229,229,229) solid 2px;
+        border-radius: 50px;
+      }
+      
+      .avtotreid{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+
+
+    .footer-user-navigation .user-login{
+      position: relative;
+      margin-left: 25px;
+    }
+  
+    .user-login::before {
+      content: "";
+    
+      position: absolute;
+
+      top: 4px;
+      left: -23px;
+      width: 13px;
+      height: 13px;
+      
+      background-image: url(../img/svg-device/user-gold.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+
+    .footer-user-navigation .user-cart{
+      position: relative;
+      margin-left: 25px;
+    }
+  
+    .user-cart::before {
+      content: "";
+    
+      position: absolute;
+  
+      top: 4px;
+      left: -23px;
+      width: 13px;
+      height: 13px;
+
+      background-image: url(../img/svg-device/cart-gold.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    
+    
+    .footer-user-navigation .user-compare{
+      position: relative;
+      margin-left: 25px;
+    }
+  
+    .user-compare::before {
+      content: "";
+  
+      position: absolute;
+  
+      top: 4px;
+      left: -23px;
+      width: 13px;
+      height: 13px;
+
+      background-image: url(../img/svg-device/compare-gold.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    .modal-map iframe {
+      position: relative;
+      z-index: 2;
+    
+      border: none;
+    }
+    .modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
