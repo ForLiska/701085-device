@@ -78,7 +78,6 @@ body {
 
  .button:active{
   background-color:rgb(240,197,46);
-
 }
 .text-button:active{
   opacity: 0.3;
@@ -285,27 +284,7 @@ body {
     margin-bottom: 80px;
    }
  
-   .sentlabel{
-    font-size: 14px;
-    line-height: 18px;
-    font-family: 'opensans';
-    color: rgb(0,0,0);
-   }
 
-   .sentinput{
-    opacity: .3;
-    background-color: rgb(0,0,0,0.2);
-  }
-
-   .sentinput:hover {
-    opacity: .6;
-   }
-
-   .sentinput:focus, .sentinput:active {
-    opacity: 1;
-    background-color: rgb(255,255,255);
-  }
-  
 
 
 /* FOOTER */
@@ -972,37 +951,187 @@ body {
     }
 
 
-      .checkbox .radio{
-        position: absolute;
+    .checkbox .radio{
+      position: absolute;
+    
+      display: inline-block;
+  
+      margin-left: -40px;
+      margin-top: 9px;
+      width: 25px;
+      height: 25px;
+  
+      background-image: url("../img/svg-device/radio-off.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  
+  .checkbox input:checked + .radio {
+      content: "";
+    
+      position: absolute;
+      display: inline-block;
+      margin-left: -40px;
+
+      width: 25px;
+      height: 25px; 
       
-        display: inline-block;
+      background-image: url("../img/svg-device/radio-on.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
     
-        margin-left: -40px;
-        margin-top: 9px;
-        width: 25px;
-        height: 25px;
+    .modal{
+      position: fixed;
+
+      background-color: rgb(255,255,255);
+
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
     
-        background-image: url("../img/svg-device/radio-off.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-      }
+    .modal-massage{
+      z-index: 1;
+
+      display: none;
+
+      top: 120px;
+      left: 50%;
+
+      width: 760px;
+      height: 353px;
+      margin-left: -480px;
+      padding: 100px 97px;
+
+      color: rgba(0,0,0);
+    }
     
-      .checkbox input:checked + .radio {
-          content: "";
-        
-          position: absolute;
-          display: inline-block;
-          margin-left: -40px;
+    .modal-close {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+
+      width: 55px;
+      height: 55px;
     
-          width: 25px;
-          height: 25px; 
-          
-          background-image: url("../img/svg-device/radio-on.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: 0 0;
-        }
+      font-size: 0;
     
-        
+      border: 0;
+    
+      cursor: pointer;
+
+      background: rgba(240,197,46,0.5);
+      border-radius: 50px;
+    }
+
+    .modal-close::before,
+    .modal-close::after {
+      content: "";
+
+      position: absolute;
+
+      top: 26px ;
+      right: 13px;
+ 
+      width: 30px;
+      height: 3px;
+
+      background-color: rgb(255,255,255);
+    }
+
+    .modal-close::before {
+      transform: rotate(45deg);
+    }
+
+    .modal-close::after {
+      transform: rotate(-45deg);
+    }
+
+    .modal-close:hover{
+      background: rgb(240,197,46);
+    }
+    
+    .modal-close:active{
+      background: rgba(240,197,46,0.3);
+    }
+
+    .message-form{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .name-email{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      width: 100%;
+    }
+    .form-group{
+      width: 360px;
+    }
+
+    .sentlabel{
+      color:rgb(0,0,0);
+      font-size: 18px;
+      line-height: 24px;
+      font-family: 'gilroy', Arial, sans-serif; 
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .sentinput{
+
+      box-sizing: border-box;
+      font-size: 14px;
+      line-height: 18px;
+      font-family: 'opensans', Arial, sans-serif; 
+      font-weight: normal;
+  
+      padding-left: 20px;
+  
+      border: transparent;
+      border-bottom: 2px solid transparent;
+  
+      width: 360px;
+      height: 50px;
+    }
+
+     .sentinput{
+      opacity: .5;
+      background-color: rgb(229,229,229);
+    }
+  
+     .sentinput:hover {
+      opacity: .8;
+     }
+  
+     .sentinput:focus, .sentinput:active {
+      background-color: rgb(255,255,255);
+    }
+
+    .textarea{
+      box-sizing: border-box;
+      width:760px;
+      height: 156px;
+      margin-bottom: 40px;
+    }
+
+    .modal-map {
+      z-index: 1;
+
+      top: 120px;
+      left: 50%;
+
+      display: none;
+      
+      margin-left: -480px;
+
+      color: rgba(0,0,0);
+
+      width: 960px;
+      height: 559px;
+    }
+    .modal-map p {
+      margin: 0;
+    }
     
