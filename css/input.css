@@ -1,0 +1,79 @@
+input[type='range'] {
+  width: 196px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  position: relative;
+  width: 196px;
+  height: 2px;
+  background: rgb(219,219,219);
+}
+
+input[type='range']:nth-child(2)::-webkit-slider-runnable-track{
+  background: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  position: relative;
+  width: 20px;
+  height: 22px;
+  margin-top: -8px;
+  background-image: url(../img/svg-device/filter-button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+input[type='range']::-webkit-slider-thumb:active{
+  width: 22px;
+  height: 24px;
+  margin-top: -8px;
+}
+
+
+input[type='range']:nth-child(1)::-webkit-slider-thumb{
+  z-index: 1;
+}
+
+.rangeslider{
+  position: relative;
+  height: 45px;
+  width: 200px;
+  display: inline-block;
+  background-color: transparent;
+  /*margin-left: 20px;*/
+
+}
+.rangeslider input{
+  position: absolute;
+  margin-top: -6px;
+}
+
+.rangeslider span{
+  position: absolute;
+  margin-top: 18px;
+  left: 0;
+  
+}
+
+.rangeslider .right{
+  position: relative;
+  float: right;
+  margin-right: -5px;
+  
+}
+.rng{
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'gilroy', Arial, sans-serif; 
+  font-weight: lighter;
+  color: rgb(190,190,190)
+}
