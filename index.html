@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>           
      <div class="container">
@@ -53,11 +52,11 @@
           </nav>
         </header>
       </div>  
+      <main class="main-index">
 <div class="container">
-    <main class="main-index">
-      <div class="slide">
-        <div class="slider slider1">
-            <div class="slider-img1"></div>
+
+        <div class="slider-item slider1">
+            <div class="slider-image"></div>
             <div class="slider-info">
               <h2 class="title">
                 Делай селфи, как Бен Стиллер!
@@ -67,8 +66,8 @@
               </p>
     
                 <div class="slider-button">
-                    <a class="button btn-about btn-communication" href="about.html">ПОДРОБНЕЕ</a>
-                    <ul class="slider-item">
+                    <a class="button btn-communication" href="about.html">ПОДРОБНЕЕ</a>
+                    <ul>
                       <li>
                           <a class="slider-btn-active " href=""></a>
                       </li>
@@ -97,8 +96,8 @@
             </div>
           </div>
 
-          <div class="slider slider2 visually-hidden">
-              <div class="slider-img2"></div>
+          <div class="slider-item slider2 visually-hidden">
+              <div class="slider-image"></div>
               <div class="slider-info">
                 <h2 class="title">
                  Худеем правильно!
@@ -128,8 +127,8 @@
               </div>
             </div>
 
-          <div class="slider slider3 visually-hidden">
-              <div class="slider-img3"></div>
+          <div class="slider-item slider3 visually-hidden">
+              <div class="slider-image"></div>
               <div class="slider-info">
                 <h2 class="title">
                   Пархает как бабочка, жалит как пчела!
@@ -138,7 +137,7 @@
                   мощным лазером, замаскированным под стандартную камеру.</p>
       
                   <div class="slider-button">
-                      <a class="button btn-about btn-communication" href="about.html">ПОДРОБНЕЕ</a>
+                      <a class="button btn-communication" href="about.html">ПОДРОБНЕЕ</a>
                       <ul class="slider-item">
                         <li>
                             <a class="slider-btn " href=""></a>
@@ -163,78 +162,77 @@
                   </div>
               </div>
             </div>
-          </div>
 
-      <section class="main-catalog">
-        <ul class="main-list">
-          <li class="main-item">
+      <section class="categories-catalog">
+        <ul class="categories-list">
+          <li class="categories-item">
             <a href="">
-                <div class="main-img ">
-                  <p class="popular-1"> </p>
+                <div class="categories-thumb">
+                  <p class="popular popular-1"> </p>
                 </div>
 
-                <div class="main-info">
-                    <h3 class="main-category">
+                <div class="categories-title">
+                    <h3>
                         Виртуальная реальность
                     </h3>
                 </div>
             </a>
           </li>
-          <li class="main-item">
+          <li class="categories-item">
               <a href="">
-                  <div class="main-img ">
-                      <p class="popular-2"> </p>
+                  <div class="categories-thumb">
+                      <p class=" popular popular-2"> </p>
                   </div>
-                  <div class="main-info">
-                      <h3 class="main-category">
+                  <div class="categories-title">
+                      <h3>
                           Моноподы для селфи
                       </h3>
                   </div>
               </a>
           </li>
-          <li class="main-item">
+          <li class="categories-item">
               <a href="">
-                  <div class="main-img ">
-                      <p class="popular-3"> </p>
+                  <div class="categories-thumb">
+                      <p class=" popular popular-3"> </p>
                     </div>
-                  <div class="main-info">
-                      <h3 class="main-category">
+                  <div class="categories-title">
+                      <h3>
                           Экшн-камеры
                       </h3>
                   </div>
               </a>
           </li>
-          <li class="main-item">
+          <li class="categories-item">
               <a href="">
-                  <div class="main-img ">
-                      <p class="popular-4"> </p>
+                  <div class="categories-thumb">
+                      <p class="popular popular-4"> </p>
                     </div>
-                  <div class="main-info">
-                      <h3 class="main-category">
+                  <div class="categories-title">
+                      <h3>
                           Фитнес-браслеты
                       </h3>
                   </div>
               </a>
           </li>
-          <li class="main-item">
+          <li class="categories-item">
               <a href="">
-                  <div class="main-img ">
-                      <p class="popular-5"> </p>
+                  <div class="categories-thumb">
+                      <p class="popular popular-5"> </p>
                     </div>
-                  <div class="main-info">
-                      <h3 class="main-category">
+                  <div class="categories-title">
+                      <h3>
                           Умные часы
                       </h3>
                   </div>
               </a>
           </li>
-          <li class="main-item">
+          <li class="categories-item">
               <a href="">
-                  <div class="main-img ">
-                      <p class="popular-6"> </p>
+                  <div class="categories-thumb">
+                      <p class="popular popular-6"> </p>
                     </div>
-                  <div class="main-info">
-                      <h3 class="main-category">
+                  <div class="categories-title">
+                      <h3>
                           Квадрокоптеры
                       </h3>
                   </div>
@@ -242,24 +240,56 @@
           </li>
         </ul>
       </section>
-      <section class="advantages">
-          <div class="advantages-background"></div>
-          <div class="advantages-info">
-            <div>
-                <a class="button btn-about btn-communication" href="about.html">ДОСТАВКА</a>
-                <a class="button btn-about btn-communication" href="about.html">ГАРАНТИЯ</a>
-                <p class="advantages-credit">КРЕДИТ</p>
+    </div>
+
+      <section class="advantages ">
+        <div class="container">
+          <div class="advantages-info ">
+            <div class="button-column">
+                <a class="button btn-communication" href="">ДОСТАВКА</a>
+                <a class="button btn-communication" href="">ГАРАНТИЯ</a>
+                <p class="advantages-active">КРЕДИТ</p>
               </div>
             <div class="advantages-line"></div>
-            <div class="credit">
+            <div class="advantages-text">
               <h2 class="title">Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
-           <div class="advantages-img"></div>
+           <div class="credit-img"></div>
           </div>
+
+          <div class="advantages-info warranty visually-hidden  ">
+            <div class="button-column">
+                <a class="button btn-communication" href="">ДОСТАВКА</a>
+                <p class="advantages-active" >ГАРАНТИЯ</p>
+                <a class="button btn-communication" href="" >КРЕДИТ</a>
+              </div>
+            <div class="advantages-line"></div>
+            <div class="advantages-text">
+              <h2 class="title">Гарантия</h2>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </div>
+           <div class="warranty-img"></div>
+          </div>
+
+          <div class="advantages-info visually-hidden ">
+            <div class="button-column">
+                <p class="advantages-active" >ДОСТАВКА</p>
+                <a class="button btn-communication" href="">ГАРАНТИЯ</a>
+                <a class="button  btn-communication" href="">КРЕДИТ</a>
+            </div>
+            <div class="advantages-line"></div>
+            <div class="advantages-text">
+              <h2 class="title">Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+           <div class="delivery-img"></div>
+          </div>
+        </div>
       </section>
-      <section class="brand-catalog">
-          <ul class="brand-list">
+
+      <div class="container">
+          <ul class="brand-list brand-catalog">
             <li class="brand-item">
                 <a href="">
                     <p class="brand-img logo-1"></p>
@@ -287,7 +317,8 @@
                 </a>
             </li>
          </ul>
-        </section>
+         
+
       
       <section class="modal modal-message">
           <h2 class="visually-hidden" >Форма обратной связи</h2>
@@ -330,7 +361,7 @@
               <li class="logistic-icon avtotreid">Автотрейдинг</li>
               <li class="logistic-icon">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button btn-about btn-communication" href="about.html">ПОДРОБНЕЕ О НАС</a>
+            <a class="button  btn-communication" href="about.html">ПОДРОБНЕЕ О НАС</a>
           </section>
     
           <section class="contacts-communication">
@@ -356,8 +387,8 @@
 
             <button class="modal-close" type="button" value = "Закрыть это окно">Закрыть</button>
           </section>
-    </main>
   </div>
+</main>
 
     <footer class="main-footer">
         <div class="container">
